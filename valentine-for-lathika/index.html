@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💖 For My Dearest Lathika Sri - A Love Letter from Pradeep</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Pacifico&family=Playfair+Display:wght@700&family=Great+Vibes&family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💖</text></svg>">
+</head>
+<body>
+    <!-- Background Music (Hidden) -->
+    <audio id="backgroundMusic" loop>
+        <source src="music/our-song.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Loading Screen -->
+    <div id="loadingScreen">
+        <div class="loading-heart">💖</div>
+        <p>Loading my love for Lathika...</p>
+    </div>
+
+    <!-- Confetti Container -->
+    <div id="confetti-container"></div>
+
+    <!-- Floating Hearts -->
+    <div class="floating-hearts"></div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="heart-animation">
+                <div class="heart"></div>
+                <div class="heart"></div>
+                <div class="heart"></div>
+            </div>
+            <h1 class="main-title">
+                <span class="title-word title-word-1">For</span>
+                <span class="title-word title-word-2">My</span>
+                <span class="title-word title-word-3">Dearest</span>
+                <span class="title-word title-word-4">Lathika Sri</span>
+            </h1>
+            <p class="subtitle">A digital bouquet of my endless love for you 💕</p>
+            <button class="music-btn" id="musicToggle">
+                <i class="fas fa-music"></i> Turn on Our Song
+            </button>
+        </header>
+
+        <!-- Love Letter Section -->
+        <section class="love-letter-section">
+            <div class="envelope" id="envelope">
+                <div class="envelope-flap"></div>
+                <div class="envelope-body">
+                    <div class="heart-seal">💌</div>
+                    <p class="envelope-text">Click to open love letter</p>
+                </div>
+            </div>
+
+            <div class="letter-container" id="letterContainer">
+                <div class="letter">
+                    <div class="letter-header">
+                        <div class="letter-date">February 14, 2024</div>
+                        <div class="letter-heart">💖</div>
+                    </div>
+                    
+                    <div class="letter-content">
+                        <div class="salutation">My Dearest Lathika,</div>
+                        
+                        <p class="letter-paragraph">
+                            From the moment our paths crossed, my world transformed into a beautiful melody. 
+                            Your smile, your laughter, the way your eyes light up when you're happy - these are 
+                            the treasures I hold closest to my heart. 
+                        </p>
+                        
+                        <p class="letter-paragraph">
+                            Every day with you feels like a blessing. You've brought colors to my monochrome world, 
+                            music to my silent thoughts, and warmth to my coldest days. When I look at you, 
+                            I see my past, my present, and my future all wrapped in one beautiful soul.
+                        </p>
+                        
+                        <p class="letter-paragraph">
+                            I remember our first conversation, the nervous excitement, the shared laughter. 
+                            I remember the first time I realized I was falling for you - it wasn't a single moment, 
+                            but a gradual realization that you had become essential to my happiness.
+                        </p>
+                        
+                        <div class="love-quote">
+                            <i class="fas fa-quote-left"></i>
+                            <span>You are my today and all of my tomorrows</span>
+                            <i class="fas fa-quote-right"></i>
+                        </div>
+                        
+                        <p class="letter-paragraph">
+                            On this Valentine's Day, I want to promise you this: I will love you through all 
+                            our adventures, support you in all your dreams, and stand by you through every 
+                            challenge. My love for you is not just a feeling - it's a commitment to be the 
+                            person who makes you smile every single day.
+                        </p>
+                        
+                        <div class="signature">
+                            <p>With all my heart, forever and always,</p>
+                            <div class="signature-name">Pradeep Krishna</div>
+                            <div class="signature-heart">💝</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Memory Lane Section -->
+        <section class="memories-section">
+            <h2 class="section-title"><i class="fas fa-heart"></i> Our Beautiful Memories</h2>
+            <div class="memories-grid">
+                <div class="memory-card" data-memory="1">
+                    <div class="memory-icon">☕</div>
+                    <h3>Our First Coffee Date</h3>
+                    <p>The day I knew you were special. Your laughter echoed in my heart long after we parted.</p>
+                </div>
+                <div class="memory-card" data-memory="2">
+                    <div class="memory-icon">🌧️</div>
+                    <h3>Rainy Day Conversations</h3>
+                    <p>That evening when time stood still and we talked about everything under the rain.</p>
+                </div>
+                <div class="memory-card" data-memory="3">
+                    <div class="memory-icon">🎬</div>
+                    <h3>First Movie Together</h3>
+                    <p>You cried at the emotional scenes, and I fell in love with your tender heart.</p>
+                </div>
+                <div class="memory-card" data-memory="4">
+                    <div class="memory-icon">🚗</div>
+                    <h3>Spontaneous Road Trips</h3>
+                    <p>Getting lost with you was finding paradise. Every wrong turn felt right with you by my side.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Love Notes Section -->
+        <section class="notes-section">
+            <h2 class="section-title"><i class="fas fa-sticky-note"></i> Little Love Notes</h2>
+            <div class="notes-container">
+                <div class="note" style="--color: #ff6b9d;">
+                    <p>"Your smile is my favorite notification"</p>
+                </div>
+                <div class="note" style="--color: #667eea;">
+                    <p>"I fall for you more every single day"</p>
+                </div>
+                <div class="note" style="--color: #20bf6b;">
+                    <p>"You're my favorite hello and hardest goodbye"</p>
+                </div>
+                <div class="note" style="--color: #a55eea;">
+                    <p>"Loving you is my favorite adventure"</p>
+                </div>
+                <div class="note" style="--color: #fc5c65;">
+                    <p>"You make my world brighter than any star"</p>
+                </div>
+                <div class="note" style="--color: #fd9644;">
+                    <p>"Every moment with you is precious"</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Secret Message Section -->
+        <section class="secret-section">
+            <h2 class="section-title"><i class="fas fa-lock"></i> Secret Chamber of My Heart</h2>
+            <p class="section-subtitle">Only you know the password to my deepest feelings</p>
+            
+            <div class="secret-input-container">
+                <input type="password" id="secretCode" placeholder="Type 'forever' or 'lathika'">
+                <button id="unlockBtn"><i class="fas fa-key"></i> Unlock My Heart</button>
+            </div>
+            
+            <div class="secret-message" id="secretMessage">
+                <div class="lock-icon">🔒</div>
+                <p>Waiting for your magic touch...</p>
+            </div>
+        </section>
+
+        <!-- Countdown & Future Section -->
+        <section class="future-section">
+            <h2 class="section-title"><i class="fas fa-heartbeat"></i> Our Beautiful Future</h2>
+            
+            <div class="countdown-container">
+                <div class="countdown-title">Counting the moments until I see you again:</div>
+                <div class="countdown-timer">
+                    <div class="time-unit">
+                        <span id="days">00</span>
+                        <small>Days</small>
+                    </div>
+                    <div class="time-separator">:</div>
+                    <div class="time-unit">
+                        <span id="hours">00</span>
+                        <small>Hours</small>
+                    </div>
+                    <div class="time-separator">:</div>
+                    <div class="time-unit">
+                        <span id="minutes">00</span>
+                        <small>Minutes</small>
+                    </div>
+                    <div class="time-separator">:</div>
+                    <div class="time-unit">
+                        <span id="seconds">00</span>
+                        <small>Seconds</small>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="future-promises">
+                <div class="promise">
+                    <div class="promise-icon">✨</div>
+                    <h3>I Promise To</h3>
+                    <p>Make you smile every single day, cherish every moment with you, and love you more with each passing sunrise.</p>
+                </div>
+                <div class="promise">
+                    <div class="promise-icon">🤝</div>
+                    <h3>I Promise To</h3>
+                    <p>Be your strength when you're weak, your comfort when you're sad, and your biggest supporter always.</p>
+                </div>
+                <div class="promise">
+                    <div class="promise-icon">💫</div>
+                    <h3>I Promise To</h3>
+                    <p>Build beautiful memories with you, grow together, and make our love story legendary.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Message Form -->
+        <section class="message-form-section">
+            <h2 class="section-title"><i class="fas fa-comment-heart"></i> Send Love Back to Pradeep</h2>
+            <div class="form-container">
+                <textarea id="loveMessage" placeholder="Write your love message here... Your words will be saved in Pradeep's heart forever 💖"></textarea>
+                <button id="sendMessageBtn">
+                    <i class="fas fa-paper-plane"></i> Send to Pradeep's Heart
+                </button>
+                <div id="messageResponse"></div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-heart">💖</div>
+            <p class="footer-message">
+                This website is my heart in digital form, beating only for you, Lathika Sri.
+            </p>
+            <p class="footer-signature">
+                Made with infinite love by Pradeep Krishna<br>
+                For the most amazing person in my universe
+            </p>
+            <div class="footer-social">
+                <button class="share-btn" id="shareBtn">
+                    <i class="fas fa-share-alt"></i> Share This Love
+                </button>
+            </div>
+            <p class="footer-note">
+                Every line of code here whispers "I love you, Lathika" 💝
+            </p>
+        </footer>
+    </div>
+
+    <!-- Hidden Love Messages (for popups) -->
+    <div id="loveMessages" style="display: none;">
+        <div data-id="1">
+            <h3>💖 You Are My Sunshine</h3>
+            <p>Just like the sun brightens the world, you brighten my life every single day.</p>
+        </div>
+        <div data-id="2">
+            <h3>🌟 My Favorite Dream</h3>
+            <p>You're the beautiful dream I never want to wake up from.</p>
+        </div>
+        <div data-id="3">
+            <h3>🎶 Our Love Song</h3>
+            <p>Every beat of my heart sings your name - Lathika, Lathika, Lathika.</p>
+        </div>
+        <div data-id="4">
+            <h3>🌸 Eternal Spring</h3>
+            <p>With you, every season feels like spring - full of life, beauty, and new beginnings.</p>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/confetti-js/0.0.18/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
